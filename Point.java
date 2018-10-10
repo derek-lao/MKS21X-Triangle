@@ -30,7 +30,7 @@ public class Point{
   }
 
   public static String toString(Point yeehaw){
-    return "(" + (yeehaw.getXcor()+"") + "," + (yeehaw.getYcor()+"") + ")";
+    return "(" + (yeehaw.getXcor()+",") + (yeehaw.getYcor()+")");
   }
 
 }
