@@ -33,13 +33,13 @@ public class Triangle{
     return pointcopy;
   }
 
-  public static String toString(Triangle hyukhyuk){
-    return "Triangle: A(" + (hyukhyuk.pointA.getXcor()+",")
-                          + (hyukhyuk.pointA.getYcor()+") B(")
-                          + (hyukhyuk.pointB.getXcor()+",")
-                          + (hyukhyuk.pointB.getYcor()+") C(")
-                          + (hyukhyuk.pointC.getXcor()+",")
-                          + (hyukhyuk.pointC.getYcor()+")");
+  public String toString(){
+    return "Triangle: A(" + (pointA.getXcor()+",")
+                          + (pointA.getYcor()+") B(")
+                          + (pointB.getXcor()+",")
+                          + (pointB.getYcor()+") C(")
+                          + (pointC.getXcor()+",")
+                          + (pointC.getYcor()+")");
   }
 
 }

@@ -29,8 +29,8 @@ public class Point{
           *(point1.getYcor() - point2.getYcor()));
   }
 
-  public static String toString(Point yeehaw){
-    return "(" + (yeehaw.getXcor()+",") + (yeehaw.getYcor()+")");
+  public String toString(){
+    return "(" + (xcor+",") + (ycor+")");
   }
 
 }
