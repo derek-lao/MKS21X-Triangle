@@ -3,8 +3,6 @@ public class Triangle{
   private Point pointB;
   private Point pointC;
 
-  private Point[] pointarray = {pointA, pointB, pointC};
-
   public Triangle(Point newpointA,
                   Point newpointB,Point newpointC){
     pointA=newpointA;
@@ -25,14 +23,22 @@ public class Triangle{
   }
 
   public Point getVertex(int index){
-
-    /* Point[] pointarray=new Point[3];
-    pointarray[0]=pointA;
-    pointarray[1]=pointB;
-    pointarray[2]=pointC;  */
-    Point pointcopy=new Point(pointarray[index].getXcor(),
-                                pointarray[index].getYcor());
-    return pointcopy;
+    if(index==0)
+    {
+      return new Point(pointA.getXcor(),pointA.getYcor());
+    }
+    if(index==1)
+    {
+      return new Point(pointB.getXcor(),pointB.getYcor());
+    }
+    if(index==2)
+    {
+      return new Point(pointC.getXcor(),pointC.getYcor());
+    }
+    else
+    {
+      return null;
+    }
   }
 
   public String toString(){
@@ -45,7 +51,22 @@ public class Triangle{
   }
 
   public void setVertex(int index, Point newP){
-    pointarray[index]=newP;
+    if(index==0)
+    {
+      pointA=newP;
+    }
+    if(index==1)
+    {
+      pointB=newP;
+    }
+    if(index==2)
+    {
+      pointC=newP;
+    }
+    else
+    {
+      pointA=pointA; //means to do nothing
+    }
   }
 
 }
