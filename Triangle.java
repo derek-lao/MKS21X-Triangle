@@ -5,9 +5,9 @@ public class Triangle{
 
   public Triangle(Point newpointA,
                   Point newpointB,Point newpointC){
-    pointA=newpointA;
-    pointB=newpointB;
-    pointC=newpointC;
+    pointA=new Point(newpointA);
+    pointB=new Point(newpointB);
+    pointC=new Point(newpointC);
   }
 
   public Triangle(double axcor, double aycor, double bxcor, double bycor,
