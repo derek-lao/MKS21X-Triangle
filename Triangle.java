@@ -25,15 +25,15 @@ public class Triangle{
   public Point getVertex(int index){
     if(index==0)
     {
-      return new Point(pointA.getXcor(),pointA.getYcor());
+      return new Point(pointA.getX(),pointA.getY());
     }
     if(index==1)
     {
-      return new Point(pointB.getXcor(),pointB.getYcor());
+      return new Point(pointB.getX(),pointB.getY());
     }
     if(index==2)
     {
-      return new Point(pointC.getXcor(),pointC.getYcor());
+      return new Point(pointC.getX(),pointC.getY());
     }
     else
     {
@@ -42,12 +42,12 @@ public class Triangle{
   }
 
   public String toString(){
-    return "Triangle: A(" + (pointA.getXcor()+",")
-                          + (pointA.getYcor()+") B(")
-                          + (pointB.getXcor()+",")
-                          + (pointB.getYcor()+") C(")
-                          + (pointC.getXcor()+",")
-                          + (pointC.getYcor()+")");
+    return "Triangle: A(" + (pointA.getX()+",")
+                          + (pointA.getY()+") B(")
+                          + (pointB.getX()+",")
+                          + (pointB.getY()+") C(")
+                          + (pointC.getX()+",")
+                          + (pointC.getY()+")");
   }
 
   public void setVertex(int index, Point newP){

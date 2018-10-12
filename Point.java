@@ -7,26 +7,26 @@ public class Point{
     ycor=y;
   }
 
-  public double getXcor(){
+  public double getX(){
     return xcor;
   }
 
-  public double getYcor(){
+  public double getY(){
     return ycor;
   }
 
   public double distanceTo(Point newpoint){
-    return Math.sqrt((this.getXcor() - newpoint.getXcor())
-          *(this.getXcor() - newpoint.getXcor()) +
-           (this.getYcor() - newpoint.getYcor())
-          *(this.getYcor() - newpoint.getYcor()));
+    return Math.sqrt((this.getX() - newpoint.getX())
+          *(this.getX() - newpoint.getX()) +
+           (this.getY() - newpoint.getY())
+          *(this.getY() - newpoint.getY()));
   }
 
-  public double distanceTo(Point point1, Point point2){
-    return Math.sqrt((point1.getXcor() - point2.getXcor())
-          *(point1.getXcor() - point2.getXcor()) +
-           (point1.getYcor() - point2.getYcor())
-          *(point1.getYcor() - point2.getYcor()));
+  public double distance(Point point1, Point point2){
+    return Math.sqrt((point1.getX() - point2.getX())
+          *(point1.getX() - point2.getX()) +
+           (point1.getY() - point2.getY())
+          *(point1.getY() - point2.getY()));
   }
 
   public String toString(){
