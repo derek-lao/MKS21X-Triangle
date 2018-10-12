@@ -37,7 +37,7 @@ public class Triangle{
     }
     else
     {
-      return null;
+      return new Point(00000000.0,00000000.0);
     }
   }
 
