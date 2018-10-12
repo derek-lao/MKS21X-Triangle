@@ -12,9 +12,9 @@ public class Triangle{
 
   public Triangle(double axcor, double aycor, double bxcor, double bycor,
                   double cxcor, double cycor){
-                    Point pointA=new Point(axcor,aycor);
-                    Point pointB=new Point(bxcor,bycor);
-                    Point pointC=new Point(cxcor,cycor);
+                    pointA=new Point(axcor,aycor);
+                    pointB=new Point(bxcor,bycor);
+                    pointC=new Point(cxcor,cycor);
   }
 
   public double getPerimeter(){
