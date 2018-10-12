@@ -7,6 +7,11 @@ public class Point{
     ycor=y;
   }
 
+  public Point(Point original){
+  		this.xcor = original.xcor;
+  		this.ycor = original.ycor;
+  	}
+
   public double getX(){
     return xcor;
   }
@@ -22,7 +27,7 @@ public class Point{
           *(this.getY() - newpoint.getY()));
   }
 
-  public double distance(Point point1, Point point2){
+  public static double distance(Point point1, Point point2){
     return Math.sqrt((point1.getX() - point2.getX())
           *(point1.getX() - point2.getX()) +
            (point1.getY() - point2.getY())

@@ -25,15 +25,15 @@ public class Triangle{
   public Point getVertex(int index){
     if(index==0)
     {
-      return new Point(pointA.getX(),pointA.getY());
+      return new Point(pointA);
     }
     if(index==1)
     {
-      return new Point(pointB.getX(),pointB.getY());
+      return new Point(pointB);
     }
     if(index==2)
     {
-      return new Point(pointC.getX(),pointC.getY());
+      return new Point(pointC);
     }
     else
     {
